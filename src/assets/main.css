@@ -1,5 +1,24 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Space+Grotesk:wght@300..700&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Space+Grotesk:wght@300..700&display=swap"); */
+@font-face {
+  font-family: 'SpaceGrotesk';
+  src: url('/src/assets/fonts/SpaceGrotesk-SemiBold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoFlex';
+  src: url('/src/assets/fonts/RobotoFlex.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@theme {
+  --font-family-sans: "RobotoFlex", sans-serif;
+  --font-family-heading: "SpaceGrotesk", sans-serif;
+
+  /* You can also define other theme values here */
+}
 
 @layer base {
   h1,
@@ -7,11 +26,69 @@
   h3,
   h4,
   h5,
-  h6
-  {
-    font-family: "Space Grotesk", sans-serif;
+  h6 {
+    font-family: var(--font-family-heading);
   }
-  body, p{
-    font-family: "Roboto Flex", sans-serif;
+
+  body {
+    font-family: var(--font-family-sans);
   }
+
+  .glass-effect {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
 }
+
+@layer utilities {
+  .bg-dotted {
+    --dot-color: #18d257;
+    --dot-size: 0.65px;
+    --dot-spacing: 15px;
+
+    background-image: radial-gradient(
+      var(--dot-color) var(--dot-size),
+      transparent var(--dot-size)
+    );
+    background-size: var(--dot-spacing) var(--dot-spacing);
+    opacity: 0.4;
+  }
+
+  .right-bg-gradient {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+
+  .right-bg-gradient::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 50%;
+    height: 50%;
+    background: linear-gradient(
+      115deg,
+      #ffea00 0%,
+      #5eff00 50%,
+      #ff8400 80%
+    );
+    opacity: 0.4;
+    filter: blur(96px);
+    z-index: -10;
+    border-radius: 10% 30% 30% 10% / 10% 10% 30% 30%;
+  }
+
+  @media (min-width: 640px) {
+    .right-bg-gradient::before {
+      top: -50%;
+      right: -30%;
+      width: 90%;
+      height: 80%;
+    }
+  }
+
+}
+
+
