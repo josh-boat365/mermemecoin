@@ -35,7 +35,7 @@ onUnmounted(() => {
   <header
     class="fixed inset-x-0 top-0 z-50 transition-all duration-300 ease-in-out"
     :class="{
-      'bg-green-900/20 backdrop-blur-md border-b border-green-800/30 rounded-4xl mx-4 mt-3 shadow-lg': isScrolled,
+      'glassy-effect bg-green-900/20 backdrop-blur-md border-b border-green-800/30 rounded-4xl mx-4 mt-3 shadow-lg': isScrolled,
       'bg-transparent': !isScrolled
     }"
   >
@@ -60,9 +60,9 @@ onUnmounted(() => {
         <a v-for="item in navigation" :key="item.name" :href="item.href"
           class="text-sm font-semibold text-white hover:text-green-400 transition-colors">{{ item.name }}</a>
       </div>
-      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="text-sm font-semibold text-white hover:text-green-400 transition-colors">Log in <span
-            aria-hidden="true">&rarr;</span></a>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-3">
+        <a href="#" class="text-sm font-semibold text-white px-4 py-1 border border-amber-50 rounded-3xl  hover:text-green-400 transition-colors">Sign in </a>
+        <a href="#" class="text-sm font-semibold text-white bg-green-600 rounded-3xl px-4 py-1 hover:text-white hover:bg-green-500 transition-colors">Sign up </a>
       </div>
     </nav>
     <Dialog class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
@@ -88,8 +88,11 @@ onUnmounted(() => {
             </div>
             <div class="py-6">
               <a href="#"
-                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold text-white hover:bg-green-800/30">Log
+                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold text-white hover:bg-green-800/30">Sign
                 in</a>
+              <a href="#"
+                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold text-white hover:bg-green-800/30">
+                Sign up</a>
             </div>
           </div>
         </div>
