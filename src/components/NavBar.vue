@@ -3,7 +3,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
-import MermemeLogo from '/src/assets/imgs/mermeme-favicon.png'
+import MermemeLogo from '@/assets/imgs/mermeme-favicon.png'
 
 const navigation = [
   { name: 'Home', href: '#' },

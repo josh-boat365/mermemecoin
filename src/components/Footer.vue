@@ -1,3 +1,13 @@
+<script setup>
+import MermemeLogo from '@/assets/imgs/mermeme-favicon.png'
+import AyeyiTechLogo from '@/assets/imgs/AT-long-logo-white.png'
+
+document.addEventListener('DOMContentLoaded', function () {
+  const currentDate = new Date();
+  const year = currentDate.getFullYear();
+  document.querySelector('.currentDate').textContent = year;
+});
+</script>
 <template>
 
   <footer>
@@ -8,7 +18,7 @@
         <div>
           <!-- LOGO -->
           <div class="flex items-center gap-3">
-            <img class="h-16 w-auto" src="/src/assets/imgs/mermeme-favicon.png" alt="Mermeme Coin Logo" />
+            <img class="h-16 w-auto" :src="MermemeLogo" alt="Mermeme Coin Logo" />
             <span class="text-4xl  font-bold text-white">Mermeme Coin</span>
           </div>
 
@@ -135,7 +145,7 @@
         <div class="flex justify-center gap-2 items-center mt-3">
           <h6 class="text-sm text-white font-bold">POWERED BY</h6>
           <a href="https://linkedin.com/in/josh-boat" target="_blank">
-            <img class=" w-[10rem]" src="/src/assets/imgs/AT-long-logo-white.png" alt="Ayeyi Technologies Logo" />
+            <img class=" w-[10rem]" :src="AyeyiTechLogo" alt="Ayeyi Technologies Logo" />
           </a>
         </div>
 
@@ -145,10 +155,3 @@
 
 </template>
 
-<script setup>
-document.addEventListener('DOMContentLoaded', function () {
-  const currentDate = new Date();
-  const year = currentDate.getFullYear();
-  document.querySelector('.currentDate').textContent = year;
-});
-</script>
