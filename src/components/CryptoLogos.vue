@@ -1,8 +1,8 @@
 <script setup>
-import DextoolsLogo from '@/assets/imgs/dextools.png'
-import RaydiumLogo from '@/assets/imgs/raydium-ray.png'
-import CoinmarketcapLogo from '@/assets/imgs/coinmarketcap.png'
-import CoingeckoLogo from '@/assets/imgs/coingecko.png'
+import DextoolsLogo from '@/assets/imgs/dextools.webp'
+import RaydiumLogo from '@/assets/imgs/raydium-ray.webp'
+import CoinmarketcapLogo from '@/assets/imgs/coinmarketcap.webp'
+import CoingeckoLogo from '@/assets/imgs/coingecko.webp'
 import DexscreenerLogo from '@/assets/imgs/dexscreener.png'
 </script>
 
