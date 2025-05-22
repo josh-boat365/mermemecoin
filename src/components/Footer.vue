@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="flex grow flex-row flex-wrap md:mx-6 md:flex-nowrap md:justify-center">
           <!-- LINK BLOCK -->
           <div class="my-5 mr-4 flex max-w-52 grow basis-24 flex-col space-y-5  md:mx-6  md:mt-0">
-            <h2 class=" font-medium text-white">SOLUTION</h2>
+            <h2 class=" font-medium text-green-400">SOLUTION</h2>
             <a href="" class=" font-light text-white">
               Marketing
             </a>
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
           </div>
           <!-- LINK BLOCK -->
           <div class="my-5 mr-4 flex max-w-52 grow basis-24 flex-col space-y-5  md:mx-6  md:mt-0">
-            <h2 class=" font-medium text-white">SUPPORT</h2>
+            <h2 class=" font-medium text-green-400">SUPPORT</h2>
             <a href="" class=" font-light text-white">
               Pricing
             </a>
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
           </div>
           <!-- LINK BLOCK -->
           <div class="my-5 mr-4 flex max-w-52 grow basis-24 flex-col space-y-5  md:mx-6  md:mt-0">
-            <h2 class=" font-medium text-white">COMPANY</h2>
+            <h2 class=" font-medium text-green-400">COMPANY</h2>
             <a href="" class=" font-light text-white">
               About
             </a>
@@ -136,11 +136,12 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
       </div>
       <!-- Divider -->
-      <div class="my-5 h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent"></div>
+      <div class="my-5 h-px bg-gradient-to-r from-transparent via-gray-100 to-transparent"></div>
       <!-- COPYRIGHT TEXT -->
       <div>
         <p class="text-center text-sm text-white  md:mt-0">
-         Mermeme Coin © Copyright 2025 - <span class="currentDate"></span>. All rights reserved. | Privacy Policy | Terms of Service
+          Mermeme Coin © Copyright 2025 - <span class="currentDate"></span>. All rights reserved. | Privacy Policy |
+          Terms of Service
         </p>
         <div class="flex justify-center gap-2 items-center mt-3">
           <h6 class="text-sm text-white font-bold">POWERED BY</h6>
