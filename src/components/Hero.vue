@@ -1,10 +1,10 @@
 <!-- src/components/HeroSection.vue -->
 <script setup>
-import LeftCoin from '@/assets/imgs/Left.png'
-import RightCoin from '@/assets/imgs/Right.png'
+import LeftCoin from '@/assets/imgs/Left.webp'
+import RightCoin from '@/assets/imgs/Right.webp'
 import { ref, onMounted, onUnmounted } from 'vue'
 import MermemeCommercial from '@/assets/vids/mermeme-commercial.mp4'
-import VideoPoster from '@/assets/vids/poster.jpg'
+import VideoPoster from '@/assets/vids/poster.webp'
 
 //Video control
 const isVideoPlaying = ref(false)
