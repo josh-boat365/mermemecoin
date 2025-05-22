@@ -131,8 +131,8 @@ onUnmounted(() => {
         </div>
       </div>
       <div class="text-center">
-        <h1 class="text-5xl font-semibold uppercase tracking-tight text-balance text-white sm:text-7xl">
-          Dive into Mermeme Coin
+        <h1 class="text-5xl font-semibold title tracking-tight text-balance text-white sm:text-7xl">
+          Dive into mermeme coin
         </h1>
         <p class="mt-8 text-lg font-medium text-pretty text-gray-100 sm:text-xl">
           A meme coin that washed up on the crypto beach, bringing bubbles and questionable decisions
