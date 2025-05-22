@@ -1,8 +1,10 @@
 <!-- src/components/HeroSection.vue -->
 <script setup>
-import LeftCoin from '@/assets/imgs/left.png'
-import RightCoin from '@/assets/imgs/right.png'
+import LeftCoin from '@/assets/imgs/Left.png'
+import RightCoin from '@/assets/imgs/Right.png'
 import { ref, onMounted, onUnmounted } from 'vue'
+import MermemeCommercial from '@/assets/vids/mermeme-commercial.mp4'
+import VideoPoster from '@/assets/vids/poster.jpg'
 
 //Video control
 const isVideoPlaying = ref(false)
@@ -152,9 +154,9 @@ onUnmounted(() => {
     <!-- Video Container -->
     <div class="mx-auto max-w-4xl lg:max-w-7xl px-4 sm:px-6 mb-12 sm:mb-16 lg:mb-20">
       <div class="relative  rounded-3xl overflow-hidden aspect-video w-full">
-        <video ref="videoRef" class="w-full h-full object-cover" poster="/src/assets/vids/poster.jpg"
+        <video ref="videoRef" class="w-full h-full object-cover" :poster="VideoPoster" preload="metadata"
           @click="toggleVideo" @play="isVideoPlaying = true" @pause="isVideoPlaying = false">
-          <source src="/src/assets/vids/mermeme-commercial.mp4" type="video/mp4" />
+          <source :src="MermemeCommercial" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
