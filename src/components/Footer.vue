@@ -143,12 +143,12 @@ document.addEventListener('DOMContentLoaded', function () {
           Mermeme Coin © Copyright 2025 - <span class="currentDate"></span>. All rights reserved. | Privacy Policy |
           Terms of Service
         </p>
-        <div class="flex justify-center gap-2 items-center mt-3">
+        <!-- <div class="flex justify-center gap-2 items-center mt-3">
           <h6 class="text-sm text-white font-bold">POWERED BY</h6>
           <a href="https://linkedin.com/in/josh-boat" target="_blank">
             <img class=" w-[10rem]" :src="AyeyiTechLogo" alt="Ayeyi Technologies Logo" />
           </a>
-        </div>
+        </div> -->
 
       </div>
     </div>
