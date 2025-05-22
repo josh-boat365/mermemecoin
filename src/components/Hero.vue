@@ -1,7 +1,7 @@
 <!-- src/components/HeroSection.vue -->
 <script setup>
-import LeftCoin from '/src/assets/imgs/left.png'
-import RightCoin from '/src/assets/imgs/right.png'
+import LeftCoin from '@/assets/imgs/left.png'
+import RightCoin from '@/assets/imgs/right.png'
 import { ref, onMounted, onUnmounted } from 'vue'
 
 //Video control
