@@ -23,7 +23,7 @@ const tokenomics = [
   {
     title: 'Liquidity',
     value: 'Locked',
-    description: 'With Davy Jones',
+    description: 'With DeFi',
     icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
         </svg>
@@ -54,13 +54,31 @@ onMounted(() => {
     scrollTrigger: {
       trigger: sectionRef.value,
       start: 'top 80%',
+      toggleActions: 'play none none none'
     },
     opacity: 0,
     y: 40,
     duration: 1,
     stagger: 0.2,
-    ease: 'power2.out'
+    ease: 'power2.out',
+    immediateRender: false
   })
+
+  gsap.from(sectionRef.value.querySelectorAll('h1,h3,p, .transactionType, .transactionFee, .commercial-text'),{
+    scrollTrigger: {
+      trigger: sectionRef.value,
+      start: 'top 80%',
+      toggleActions: 'play none none none'
+    },
+    opacity: 0,
+    y: 40,
+    duration: 1,
+    stagger: 0.2,
+    ease: 'power2.out',
+    immediateRender: false
+  })
+
+  ScrollTrigger.refresh()
 })
 </script>
 
@@ -69,24 +87,30 @@ onMounted(() => {
 
 
 <template>
-  <div class="bg-green-900 py-24 sm:py-32 overflow-hidden" ref="sectionRef">
+  <div ref="sectionRef" class="bg-cyan-900 py-24 sm:py-32 overflow-hidden">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="card">
         <div class="card-body space-y-12">
+          <div class="commercial-text mb-4 flex justify-center sm:mb-8">
+            <div
+              class="relative rounded-full px-3 mb-5 py-1 text-xs font-semibold bg-[#910b9822] text-white ring-1 ring-purple-950 hover:ring-purple-500">
+              🤑 Value
+            </div>
+          </div>
           <!-- Hero Section -->
           <div>
             <h1 class="text-center text-4xl font-bold uppercase text-white">
-              experience seamless transactions with mermeme coin's tax-free advantage
+              experience seamless transactions with mermeme coin's minimal tax advantage
             </h1>
             <p class="text-center text-gray-300 mt-4">
-              Mermeme Coin is a tax-free token, allowing you to buy and sell without any additional fees.
+              Mermeme Coin is a minimal tax token, allowing you to buy and sell without any additional fees.
               This means more value for you and your investments.
             </p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-              <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
-                <svg class="w-10 h-10 text-green-700 text-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor">
+              <div class="transactionType bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
+                <svg class="w-10 h-10 text-green-700 text-bold" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                     stroke="currentColor" className="size-6">
                     <path strokeLinecap="round" strokeLinejoin="round"
@@ -99,9 +123,9 @@ onMounted(() => {
                   <p>Buy / Sell</p>
                 </div>
               </div>
-              <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
-                <svg class="w-10 h-10 text-green-700 text-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor">
+              <div class="transactionFee bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
+                <svg class="w-10 h-10 text-green-700 text-bold" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                     stroke="currentColor" className="size-6">
                     <path strokeLinecap="round" strokeLinejoin="round"
@@ -128,8 +152,8 @@ onMounted(() => {
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div class="bg-white p-5 rounded-lg shadow-lg" v-for="(item, index) in tokenomics" :key="index"
                 :ref="el => tokenRefs[index] = el">
-                <svg class="w-10 h-10 mx-auto text-bold text-green-600 mb-2" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor" v-html="item.icon">
+                <svg class="w-10 h-10 mx-auto text-bold text-green-600 mb-2" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor" v-html="item.icon">
                 </svg>
                 <h4 class="text-lg font-semibold">{{ item.title }}</h4>
                 <p class="text-2xl font-bold text-green-900">{{ item.value }}</p>
