@@ -79,7 +79,7 @@ onMounted(() => {
 
 
 <template>
-  <div ref="sectionRef" class="bg-cyan-900 py-24 sm:py-32 overflow-hidden">
+  <div ref="sectionRef" class="bg-cyan-900 py-24 sm:py-32 overflow-hidden" id="tokenomicsSection">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="card">
         <div class="card-body space-y-12">

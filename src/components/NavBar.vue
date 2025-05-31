@@ -6,9 +6,9 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 import MermemeLogo from '@/assets/imgs/mermeme-favicon.png'
 
 const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'About', href: '#' },
-  { name: 'Tokenomics', href: '#' },
+  { name: 'Home', href: '#home' },
+  { name: 'About', href: '#aboutSection' },
+  { name: 'Tokenomics', href: '#tokenomicsSection' },
   { name: 'Buy MermemeCoin', href: '#' },
 ]
 

@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
         <!-- Footer column -->
         <div>
-          <!-- <h2 class="text-sm font-semibold text-green-400 mb-4 uppercase">Mermeme Coin</h2> -->
+
           <div class="flex items-center gap-3 mb-4">
             <img class="w-10 h-auto" :src="MermemeLogo" alt="Mermeme Coin Logo" />
             <span class="text-lg font-bold text-white">Mermeme Coin</span>
@@ -41,35 +41,35 @@ document.addEventListener('DOMContentLoaded', function () {
 
         <!-- Footer column -->
         <div>
-          <h2 class="text-sm font-semibold text-green-400 mb-4 uppercase">Solution</h2>
+          <h2 class="text-sm font-semibold text-cyan-500 mb-4 uppercase">Solution</h2>
           <ul class="space-y-2 text-sm">
-            <li><a href="#" class="hover:text-green-400">Marketing</a></li>
-            <li><a href="#" class="hover:text-green-400">Analytics</a></li>
-            <li><a href="#" class="hover:text-green-400">Commerce</a></li>
-            <li><a href="#" class="hover:text-green-400">Insights</a></li>
+            <li><a href="#" class="hover:text-cyan-500">Marketing</a></li>
+            <li><a href="#" class="hover:text-cyan-500">Analytics</a></li>
+            <li><a href="#" class="hover:text-cyan-500">Commerce</a></li>
+            <li><a href="#" class="hover:text-cyan-500">Insights</a></li>
           </ul>
         </div>
 
         <!-- Footer column -->
         <div>
-          <h2 class="text-sm font-semibold text-green-400 mb-4 uppercase">Support</h2>
+          <h2 class="text-sm font-semibold text-cyan-500 mb-4 uppercase">Support</h2>
           <ul class="space-y-2 text-sm">
-            <li><a href="#" class="hover:text-green-400">Pricing</a></li>
-            <li><a href="#" class="hover:text-green-400">Documentation</a></li>
-            <li><a href="#" class="hover:text-green-400">Guides</a></li>
-            <li><a href="#" class="hover:text-green-400">API Status</a></li>
+            <li><a href="#" class="hover:text-cyan-500">Pricing</a></li>
+            <li><a href="#" class="hover:text-cyan-500">Documentation</a></li>
+            <li><a href="#" class="hover:text-cyan-500">Guides</a></li>
+            <li><a href="#" class="hover:text-cyan-500">API Status</a></li>
           </ul>
         </div>
 
         <!-- Footer column -->
         <div>
-          <h2 class="text-sm font-semibold text-green-400 mb-4 uppercase">Company</h2>
+          <h2 class="text-sm font-semibold text-cyan-500 mb-4 uppercase">Company</h2>
           <ul class="space-y-2 text-sm">
-            <li><a href="#" class="hover:text-green-400">About</a></li>
-            <li><a href="#" class="hover:text-green-400">Blog</a></li>
-            <li><a href="#" class="hover:text-green-400">Jobs</a></li>
-            <li><a href="#" class="hover:text-green-400">Press</a></li>
-            <li><a href="#" class="hover:text-green-400">Partners</a></li>
+            <li><a href="#" class="hover:text-cyan-500">About</a></li>
+            <li><a href="#" class="hover:text-cyan-500">Blog</a></li>
+            <li><a href="#" class="hover:text-cyan-500">Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-500">Press</a></li>
+            <li><a href="#" class="hover:text-cyan-500">Partners</a></li>
           </ul>
         </div>
 
@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', function () {
       <div class="flex flex-col items-center justify-center gap-3 text-sm text-center">
         <p>
           © 2025 - <span class="currentYear"></span> Mermeme Coin. All rights reserved. |
-          <a href="#" class="hover:text-green-400">Privacy Policy</a> |
-          <a href="#" class="hover:text-green-400">Terms of Service</a>
+          <a href="#" class="hover:text-cyan-500">Privacy Policy</a> |
+          <a href="#" class="hover:text-cyan-500">Terms of Service</a>
         </p>
         <div class="flex flex-col sm:flex-row items-center gap-2">
           <span class="font-semibold text-xs text-white">Powered by</span>
