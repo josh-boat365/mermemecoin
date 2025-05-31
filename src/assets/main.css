@@ -16,6 +16,8 @@
 @theme {
   --font-family-sans: "RobotoFlex", sans-serif;
   --font-family-heading: "SpaceGrotesk", sans-serif;
+  --color-primary: #104e64;
+  --color-secondary: #053345;
 
   /* You can also define other theme values here */
 }
@@ -28,10 +30,12 @@
   h5,
   h6 {
     font-family: var(--font-family-heading);
+    color: var(--color-primary);
   }
 
   body {
     font-family: var(--font-family-sans);
+    color: var(--color-secondary);
   }
 
   .glass-effect {
@@ -78,6 +82,7 @@
     filter: blur(96px);
     z-index: -10;
     border-radius: 10% 30% 30% 10% / 10% 10% 30% 30%;
+
   }
 
   @media (min-width: 640px) {
