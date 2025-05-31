@@ -21,7 +21,24 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="mx-auto max-w-7xl px-6 py-12 md:py-16">
 
       <!-- Top section: Links -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
+        <!-- Footer column -->
+        <div>
+          <!-- <h2 class="text-sm font-semibold text-green-400 mb-4 uppercase">Mermeme Coin</h2> -->
+          <div class="flex items-center gap-3 mb-4">
+            <img class="w-10 h-auto" :src="MermemeLogo" alt="Mermeme Coin Logo" />
+            <span class="text-lg font-bold text-white">Mermeme Coin</span>
+          </div>
+          <p class="text-sm text-gray-300 mb-4">
+            Mermeme Coin is a community-driven cryptocurrency designed to provide fast, secure, and low-cost
+            transactions.
+            Join us in revolutionizing the crypto space!
+          </p>
+        </div>
+
+        <!-- Optional extra column (or leave empty on smaller screens) -->
+        <div class="hidden lg:block"></div>
+
         <!-- Footer column -->
         <div>
           <h2 class="text-sm font-semibold text-green-400 mb-4 uppercase">Solution</h2>
@@ -56,8 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
           </ul>
         </div>
 
-        <!-- Optional extra column (or leave empty on smaller screens) -->
-        <div class="hidden lg:block"></div>
+
       </div>
 
       <!-- Divider -->
