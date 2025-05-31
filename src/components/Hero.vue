@@ -109,7 +109,7 @@ onUnmounted(() => {
 
 <template>
   <div
-  ref="heroSection"
+  ref="heroSection" id="home"
    class="relative isolate px-6 pt-16 pb-16 lg:px-8 overflow-hidden" @mousemove="handleMouseMove"
     @mouseleave="handleMouseLeave">
 
