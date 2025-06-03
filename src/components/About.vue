@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const aboutSection = ref(null)
 
-onMounted(() =>{
+onMounted(() => {
   gsap.from(aboutSection.value, {
     scrollTrigger: {
       trigger: aboutSection.value,
@@ -67,58 +67,61 @@ const toggleVideo = () => {
 
 
 <template>
-  <div
-  ref="aboutSection" class="bg-white py-16 sm:py-24" id="aboutSection">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="commercial-text mb-4 flex justify-center sm:mb-8">
-        <div
-          class="relative rounded-full px-3 mb-5 py-1 text-xs font-semibold bg-[#910b9822] text-purple-900 ring-1 ring-purple-950 hover:ring-purple-500">
-          🍿🎥 Watch The Mermeme Coin Commercial
-        </div>
-      </div>
-      <div class="flex flex-col lg:flex-row justify-between gap-y-24 gap-x-20">
-        <!-- Text Section -->
-        <div class="lg:w-1/2">
-          <h2 class="text-3xl sm:text-4xl font-bold uppercase text-cyan-900 mb-4">
-            What is Mermeme Coin?
-          </h2>
-          <p class="text-base text-justify sm:text-lg text-cyan-950">
-            <strong>MERMEME</strong> is a community-driven meme coin on the Solana blockchain, designed to bring fun and
-            engagement to the crypto space.
-            With a focus on community participation, Mermeme Coin aims to create a vibrant ecosystem where users can
-            enjoy memes, participate in events, and contribute to the growth of the project.
-            The tokenomics are designed to ensure fair distribution and sustainability, making it an exciting
-            opportunity for both meme enthusiasts and crypto investors.
-          </p>
-        </div>
+  <div ref="aboutSection" class="bg-white py-16 sm:py-24" id="aboutSection">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
 
-        <!-- Video Container -->
-        <div class="lg:w-1/2 w-full video">
-          <div class="relative rounded-xl overflow-auto  aspect-video w-full">
-            <video ref="videoRef" class="w-full h-full object-cover" :poster="VideoPoster" preload="metadata"
-              @click="toggleVideo" @play="isVideoPlaying = true" @pause="isVideoPlaying = false">
-              <source :src="MermemeCommercial" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-
-            <!-- Play button overlay -->
-            <div v-if="!isVideoPlaying"
-              class="absolute inset-0 flex items-center justify-center cursor-pointer bg-black/1 hover:bg-black/10 transition-opacity duration-300"
-              @click="toggleVideo">
-              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center shadow-lg">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  class="h-8 w-8 sm:h-10 sm:w-10 text-green-500 hover:text-white ml-1" viewBox="0 0 20 20"
-                  fill="currentColor">
-                  <path fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                    clip-rule="evenodd" />
-                </svg>
-              </div>
+          <div class="commercial-text mb-4 flex justify-center sm:mb-8">
+            <div
+              class="relative rounded-full px-3 mb-5 py-1 text-xs font-semibold bg-[#910b9822] text-purple-900 ring-1 ring-purple-950 hover:ring-purple-500">
+              🍿🎥 Watch The Mermeme Coin Commercial
             </div>
           </div>
-        </div>
+          
+          <div class="flex flex-col lg:flex-row justify-between gap-y-24 gap-x-20">
+            <!-- Text Section -->
+            <div class="lg:w-1/2">
+              <h2 class="text-3xl sm:text-4xl font-bold uppercase text-cyan-900 mb-4">
+                What is Mermeme Coin?
+              </h2>
+              <p class="text-base text-justify sm:text-lg text-cyan-950">
+                <strong>MERMEME</strong> is a community-driven meme coin on the Solana blockchain, designed to bring fun
+                and
+                engagement to the crypto space.
+                With a focus on community participation, Mermeme Coin aims to create a vibrant ecosystem where users can
+                enjoy memes, participate in events, and contribute to the growth of the project.
+                The tokenomics are designed to ensure fair distribution and sustainability, making it an exciting
+                opportunity for both meme enthusiasts and crypto investors.
+              </p>
+            </div>
 
-      </div>
+            <!-- Video Container -->
+            <div class="lg:w-1/2 w-full video">
+              <div class="relative rounded-xl overflow-auto  aspect-video w-full">
+                <video ref="videoRef" class="w-full h-full object-cover" :poster="VideoPoster" preload="metadata"
+                  @click="toggleVideo" @play="isVideoPlaying = true" @pause="isVideoPlaying = false">
+                  <source :src="MermemeCommercial" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+
+                <!-- Play button overlay -->
+                <div v-if="!isVideoPlaying"
+                  class="absolute inset-0 flex items-center justify-center cursor-pointer bg-black/1 hover:bg-black/10 transition-opacity duration-300"
+                  @click="toggleVideo">
+                  <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                      class="h-8 w-8 sm:h-10 sm:w-10 text-green-500 hover:text-white ml-1" viewBox="0 0 20 20"
+                      fill="currentColor">
+                      <path fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
     </div>
   </div>
 

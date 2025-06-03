@@ -32,8 +32,8 @@ import Footer from '@/components/Footer.vue';
       <NavBar />
       <Hero />
       <CryptoLogos />
-      <TransactionInfo />
       <CTA />
+      <TransactionInfo />
       <Footer />
     </div>
   </div>
